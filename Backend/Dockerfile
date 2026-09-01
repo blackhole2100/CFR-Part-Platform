@@ -13,7 +13,7 @@
 # -----------------------------------------------------------------------------
 # Node 22 is the active LTS line. Do not bump to odd-numbered (non-LTS)
 # releases; they receive no long-term security support.
-FROM node:22-alpine AS base
+FROM node:26-alpine AS base
 
 # Label used by deploy.sh's `docker image prune --filter label=...`
 LABEL app="recovery-journey"
